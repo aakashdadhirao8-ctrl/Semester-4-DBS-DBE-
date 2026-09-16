@@ -1,0 +1,287 @@
+[
+  {
+    "id": "ADM-88412",
+    "name": "Eleanor Vance",
+    "age": 34,
+    "gender": "Female",
+    "dischargeDate": "2026-05-12",
+    "status": "Fully Discharged",
+    "diagnosis": "Acute Bacterial Pneumonia with Severe Secondary Respiratory Distress",
+    "readyToDischarge": true,
+    "patientConsentedDischarge": true,
+    "medications": [
+      {
+        "name": "Levofloxacin",
+        "dosage": "500mg Once Daily"
+      },
+      {
+        "name": "Albuterol Inhaler",
+        "dosage": "2 Puffs Every 6 Hours PRN"
+      },
+      {
+        "name": "Vitamin C + Zinc Co-therapy",
+        "dosage": "1000mg Daily"
+      }
+    ],
+    "notes": "Patient responded exceptionally well to an aggressive oral course. Pulmonary fields are clear.",
+    "vitals": {
+      "days": [
+        "Admit",
+        "Week 2",
+        "Week 4",
+        "Week 6",
+        "Week 8"
+      ],
+      "bpm": [
+        115,
+        98,
+        85,
+        76,
+        72
+      ],
+      "systolicBP": [
+        138,
+        128,
+        122,
+        118,
+        115
+      ],
+      "diastolicBP": [
+        88,
+        82,
+        80,
+        78,
+        76
+      ],
+      "spo2": [
+        89,
+        93,
+        96,
+        98,
+        99
+      ]
+    },
+    "diet": {
+      "carbs": 45,
+      "protein": 30,
+      "fats": 15,
+      "fiber": 10
+    },
+    "bloodTests": {
+      "WBC": "6.4 K/uL",
+      "RBC": "4.52 M/uL",
+      "Hemoglobin": "13.8 g/dL",
+      "Hematocrit": "41.2%",
+      "Platelets": "245 K/uL",
+      "Sodium": "139 mEq/L",
+      "Potassium": "4.1 mEq/L",
+      "Creatinine": "0.82 mg/dL",
+      "BUN": "14 mg/dL",
+      "Glucose": "92 mg/dL",
+      "ALT": "22 U/L",
+      "AST": "19 U/L",
+      "CRP": "0.4 mg/dL"
+    },
+    "radiology": {
+      "modality": "Chest X-Ray PA & Lateral",
+      "findings": "Significant resolution of previously noted dense consolidation in the right lower lobe. Lungs are clear. No pleural effusions or pneumothorax identified.",
+      "impression": "Resolved acute bacterial pneumonia."
+    }
+  },
+  {
+    "id": "ADM-44019",
+    "name": "Arthur Pendelton",
+    "age": 71,
+    "gender": "Male",
+    "dischargeDate": "Continuous Tracker",
+    "status": "Monitoring / Stable",
+    "diagnosis": "Chronic Ischemic Heart Disease & Stage 2 Chronic Kidney Disease",
+    "readyToDischarge": true,
+    "patientConsentedDischarge": false,
+    "medications": [
+      {
+        "name": "Atorvastatin",
+        "dosage": "40mg At Bedtime"
+      },
+      {
+        "name": "Lisinopril",
+        "dosage": "20mg Morning"
+      }
+    ],
+    "notes": "Long-term renal and vascular calcification monitoring archetype.",
+    "vitals": {
+      "days": [
+        "Jan 2022",
+        "Jul 2022",
+        "Jan 2023",
+        "Jul 2023",
+        "Jan 2024",
+        "Jul 2024",
+        "Jan 2025",
+        "Jul 2025",
+        "Jan 2026",
+        "Current"
+      ],
+      "bpm": [
+        84,
+        82,
+        79,
+        88,
+        75,
+        73,
+        81,
+        76,
+        74,
+        71
+      ],
+      "systolicBP": [
+        155,
+        148,
+        142,
+        150,
+        136,
+        134,
+        138,
+        128,
+        124,
+        120
+      ],
+      "diastolicBP": [
+        95,
+        90,
+        88,
+        92,
+        84,
+        82,
+        85,
+        80,
+        78,
+        75
+      ],
+      "spo2": [
+        94,
+        95,
+        96,
+        94,
+        97,
+        96,
+        95,
+        97,
+        98,
+        98
+      ]
+    },
+    "diet": {
+      "carbs": 35,
+      "protein": 20,
+      "fats": 25,
+      "fiber": 20
+    },
+    "bloodTests": {
+      "WBC": "7.1 K/uL",
+      "RBC": "3.98 M/uL",
+      "Hemoglobin": "11.5 g/dL",
+      "Hematocrit": "35.1%",
+      "Platelets": "198 K/uL",
+      "Sodium": "136 mEq/L",
+      "Potassium": "4.9 mEq/L",
+      "Creatinine": "1.42 mg/dL",
+      "BUN": "28 mg/dL",
+      "Glucose": "104 mg/dL",
+      "ALT": "31 U/L",
+      "AST": "35 U/L",
+      "CRP": "1.2 mg/dL"
+    },
+    "radiology": {
+      "modality": "Transthoracic Echocardiogram & Chest CT",
+      "findings": "Mild concentric left ventricular hypertrophy. Calcification of the aortic valve leaflets noted. Mild biapical structural scarring without acute airspace disease.",
+      "impression": "Stable ischemic cardiomyopathy with chronic renal calcifications."
+    }
+  },
+  {
+    "id": "ADM-10293",
+    "name": "Marcus Sterling",
+    "age": 52,
+    "gender": "Male",
+    "dischargeDate": "2026-06-01",
+    "status": "Fully Discharged",
+    "diagnosis": "Newly Diagnosed Type 2 Diabetes Mellitus",
+    "readyToDischarge": true,
+    "patientConsentedDischarge": true,
+    "medications": [
+      {
+        "name": "Metformin HCl",
+        "dosage": "500mg Twice Daily"
+      }
+    ],
+    "notes": "Transitioning to complex low-glycemic carbohydrate macro structures.",
+    "vitals": {
+      "days": [
+        "Week 1",
+        "Week 2",
+        "Week 3",
+        "Week 4",
+        "Week 5",
+        "Week 6"
+      ],
+      "bpm": [
+        92,
+        88,
+        84,
+        80,
+        82,
+        78
+      ],
+      "systolicBP": [
+        144,
+        138,
+        135,
+        130,
+        126,
+        122
+      ],
+      "diastolicBP": [
+        92,
+        86,
+        84,
+        82,
+        80,
+        78
+      ],
+      "spo2": [
+        96,
+        97,
+        97,
+        98,
+        98,
+        99
+      ]
+    },
+    "diet": {
+      "carbs": 25,
+      "protein": 40,
+      "fats": 20,
+      "fiber": 15
+    },
+    "bloodTests": {
+      "WBC": "5.9 K/uL",
+      "RBC": "4.81 M/uL",
+      "Hemoglobin": "14.2 g/dL",
+      "Hematocrit": "43.5%",
+      "Platelets": "210 K/uL",
+      "Sodium": "141 mEq/L",
+      "Potassium": "4.0 mEq/L",
+      "Creatinine": "0.95 mg/dL",
+      "BUN": "16 mg/dL",
+      "Glucose": "134 mg/dL",
+      "ALT": "45 U/L",
+      "AST": "38 U/L",
+      "CRP": "0.8 mg/dL"
+    },
+    "radiology": {
+      "modality": "Abdominal Ultrasound",
+      "findings": "Increased echogenicity of the hepatic parenchyma consistent with moderate diffuse fatty infiltration. Gallbladder, spleen, and kidneys appear normal size without calculi.",
+      "impression": "Hepatic Steatosis (Fatty Liver) secondary to metabolic syndrome."
+    }
+  }
+]

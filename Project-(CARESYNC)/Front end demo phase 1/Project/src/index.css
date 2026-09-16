@@ -1,0 +1,707 @@
+/* Login Screen Layout
+.login-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 1rem;
+}
+
+.login-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+}
+
+.login-toggle {
+  display: flex;
+  background: #f1f5f9;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.login-toggle-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0.6rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border-radius: 0.35rem;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.login-toggle-btn.active {
+  background: #ffffff;
+  color: var(--primary);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+
+.doctor-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .doctor-layout {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+.patient-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.patient-list-item {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.patient-list-item:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.patient-list-item.selected {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  background: #e2e8f0;
+  color: #475569;
+}
+/* ==========================================
+   ENTERPRISE (CISCO-STYLE) LOGIN SCREEN
+   ========================================== 
+.login-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #ffffff;
+}
+
+.login-brand-side {
+  flex: 1;
+  background: linear-gradient(135deg, #041E42 0%, #005E9A 100%);
+  color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Abstract graphic element for the background 
+.login-brand-side::after {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
+  top: -200px;
+  right: -200px;
+  border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  .login-brand-side {
+    display: flex;
+  }
+}
+
+.login-form-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.login-card-enterprise {
+  width: 100%;
+  max-width: 420px;
+}
+
+.cisco-input {
+  width: 100%;
+  padding: 0.85rem 0;
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  background: transparent;
+  font-size: 1rem;
+  color: #1e293b;
+  transition: all 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.cisco-input:focus {
+  outline: none;
+  border-bottom-color: #005E9A;
+}
+
+.cisco-input::placeholder {
+  color: #94a3b8;
+}
+
+.cisco-btn {
+  background: #005E9A;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+
+.cisco-btn:hover {
+  background: #041E42;
+}
+
+/* Enhanced Edit Forms 
+.vitals-adder-box {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 1rem;
+} */
+ /* ==========================
+   GLOBAL STYLES
+========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --primary:#0f4c81;
+  --primary-light:#2563eb;
+  --secondary:#10b981;
+  --danger:#ef4444;
+  --bg:#f4f7fb;
+  --card:#ffffff;
+  --text:#1e293b;
+  --muted:#64748b;
+  --border:#e2e8f0;
+}
+
+body{
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+  height:80px;
+  background:white;
+  border-bottom:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 40px;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 2px 10px rgba(0,0,0,0.04);
+}
+
+.nav-brand{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.brand-title{
+  font-size:1.3rem;
+  font-weight:700;
+  color:var(--primary);
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+.main-content{
+  padding:30px;
+}
+
+/* ==========================
+   LOGIN PAGE
+========================== */
+
+.login-layout{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.login-brand-side{
+  background:linear-gradient(
+      135deg,
+      #0f4c81,
+      #2563eb
+  );
+  color:white;
+  padding:60px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.login-form-side{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f8fafc;
+}
+
+.login-card-enterprise{
+  width:100%;
+  max-width:450px;
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:
+      0 15px 40px rgba(0,0,0,0.08);
+}
+
+.cisco-input{
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.cisco-input:focus{
+  outline:none;
+  border-color:var(--primary-light);
+  box-shadow:0 0 0 4px rgba(37,99,235,0.15);
+}
+
+.cisco-btn{
+  width:100%;
+  padding:14px;
+  background:linear-gradient(
+      135deg,
+      var(--primary),
+      var(--primary-light)
+  );
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.cisco-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* ==========================
+   DOCTOR DASHBOARD
+========================== */
+
+.doctor-layout{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:25px;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.patient-sidebar-list{
+  margin-top:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.patient-list-item{
+  padding:15px;
+  border:none;
+  border-radius:14px;
+  background:white;
+  cursor:pointer;
+  text-align:left;
+  transition:0.3s;
+  box-shadow:0 3px 10px rgba(0,0,0,0.04);
+}
+
+.patient-list-item:hover{
+  transform:translateX(4px);
+}
+
+.patient-list-item.selected{
+  background:linear-gradient(
+      135deg,
+      #0f4c81,
+      #2563eb
+  );
+  color:white;
+}
+
+/* ==========================
+   CARD DESIGN
+========================== */
+
+.card{
+  background:white;
+  border-radius:20px;
+  padding:25px;
+  box-shadow:
+      0 8px 25px rgba(0,0,0,0.06);
+  border:1px solid var(--border);
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+.form-control{
+  width:100%;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  font-size:14px;
+}
+
+.form-control:focus{
+  outline:none;
+  border-color:var(--primary-light);
+}
+
+.form-label{
+  display:block;
+  margin-bottom:5px;
+  font-size:13px;
+  color:var(--muted);
+  font-weight:600;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.span-two{
+  grid-column:span 2;
+}
+
+/* ==========================
+   VITALS SECTION
+========================== */
+
+.vitals-adder-box{
+  background:#f8fafc;
+  padding:20px;
+  border-radius:15px;
+  border:1px solid var(--border);
+}
+
+/* ==========================
+   CHARTS
+========================== */
+
+.grid-charts{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:20px;
+}
+
+.full-width-chart{
+  grid-column:span 2;
+}
+
+canvas{
+  max-width:100%;
+}
+
+/* ==========================
+   PATIENT VIEW
+========================== */
+
+.dashboard-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.dashboard-header h2{
+  color:var(--primary);
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#94a3b8;
+  border-radius:20px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1000px){
+
+  .doctor-layout{
+    grid-template-columns:1fr;
+  }
+
+  .grid-charts{
+    grid-template-columns:1fr;
+  }
+
+  .full-width-chart{
+    grid-column:auto;
+  }
+
+  .login-layout{
+    grid-template-columns:1fr;
+  }
+
+  .login-brand-side{
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+    gap:10px;
+  }
+
+  .main-content{
+    padding:15px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .span-two{
+    grid-column:auto;
+  }
+}
+
+/* Main Container */
+.patient-view {
+    padding: 20px;
+    background: #f8fafc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.dashboard-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* Print Button */
+.print-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.print-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* Main Card */
+.patient-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid #2563eb;
+}
+
+/* Title */
+.summary-title {
+    text-align: center;
+    color: #1e40af;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Patient Details */
+.patient-info {
+    background: #eff6ff;
+    padding: 15px;
+    border-radius: 12px;
+    color: #334155;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #2563eb, transparent);
+    margin: 25px 0;
+}
+
+/* Charts */
+.charts-section {
+    margin: 25px 0;
+    padding: 20px;
+    background: #f8fafc;
+    border-radius: 15px;
+}
+
+/* Section Headings */
+.section-heading {
+    color: #1e293b;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    border-left: 4px solid #2563eb;
+}
+
+/* Text Blocks */
+.diagnosis-text,
+.instructions-text {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 12px;
+    line-height: 1.7;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+/* Print Mode */
+@media print {
+    .print-hide {
+        display: none !important;
+    }
+
+    .patient-card {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+    }
+
+    .patient-view {
+        background: white;
+        padding: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .dashboard-title {
+        font-size: 1.6rem;
+    }
+
+    .patient-card {
+        padding: 20px;
+    }
+
+    .summary-title {
+        font-size: 1.5rem;
+    }
+}
